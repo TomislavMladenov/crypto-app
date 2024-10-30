@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">CryptoApp</string>
+
+    <string name="text_symbol">Symbol</string>
+    <string name="text_price_chance">Price change</string>
+    <string name="text_price_chance_per">Price change percent</string>
+    <string name="text_weight_avg_price">Weight average price</string>
+    <string name="text_prev_close_price">Previous close price</string>
+    <string name="text_last_price">Last price</string>
+    <string name="text_last_qty">Last QTY</string>
+    <string name="text_bid_price">Bid price</string>
+    <string name="text_bid_qty">Bid QTY</string>
+    <string name="text_ask_price">Ask price</string>
+    <string name="text_ask_qty">Ask QTY</string>
+    <string name="text_open_price">Open price</string>
+    <string name="text_high_price">High price</string>
+    <string name="text_low_price">Low price</string>
+    <string name="text_volume">Volume</string>
+    <string name="text_quote_volume">Quote volume</string>
+    <string name="text_open_time">Open time</string>
+    <string name="text_close_time">Close time</string>
+    <string name="text_first_id">First ID</string>
+    <string name="text_last_id">Last ID</string>
+    <string name="text_count">Count</string>
+
+    <string name="text_content_unavailable">Content unavailable</string>
+    <string name="text_unable_to_fetch_results">No results found</string>
+    <string name="text_back">Back</string>
+    <string name="text_try_again">Try again</string>
 </resources>

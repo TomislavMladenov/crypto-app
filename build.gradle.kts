@@ -6,7 +6,7 @@ plugins {
     alias(libs.plugins.hilt.android) apply false
     alias(libs.plugins.kotlinx.serialization) apply false
     alias(libs.plugins.room.compiler) apply false
-    id("com.google.devtools.ksp") version "2.0.21-1.0.25" apply false
+    alias(libs.plugins.google.devtools.ksp) apply false
 
 }
 

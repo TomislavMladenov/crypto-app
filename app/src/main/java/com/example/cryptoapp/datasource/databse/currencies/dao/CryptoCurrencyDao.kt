@@ -6,6 +6,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.RoomDatabase
+import androidx.room.Transaction
 import com.example.cryptoapp.datasource.databse.currencies.model.CryptoCurrencyEntity
 import kotlinx.coroutines.flow.Flow
 
@@ -25,4 +26,12 @@ interface CryptoCurrencyDao {
     @Query("SELECT * FROM crypto_currency")
     fun getAllCryptoCurrencies(): Flow<List<CryptoCurrencyEntity>>
 
+    @Query("DELETE FROM crypto_currency")
+    suspend fun deleteAll()
+
+    @Transaction
+    suspend fun updateCryptoCurrencies(list: List<CryptoCurrencyEntity>) {
+        deleteAll()
+        insertCurrencies(list)
+    }
 }
